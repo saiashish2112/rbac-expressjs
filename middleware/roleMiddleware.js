@@ -1,5 +1,5 @@
 function roleMiddleware(requiredRole) {
-    return (req, res, next){
+    return (req, res, next) =>{
         const user = req.user;
 
         if(!user){

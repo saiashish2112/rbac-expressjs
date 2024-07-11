@@ -3,7 +3,7 @@ const router = express.Router();
 const roleMiddleware = require("../middleware/roleMiddleware");
 
 
-router.get('/admin', roleMiddleware('admin'), (req, res) => {
+const adminRoutes= router.get('/admin', roleMiddleware('admin'), (req, res) => {
     res.send('Hello Admin');
 });
 
